@@ -50,3 +50,35 @@ button:active{
 button:focus{
     outline: none;
 }
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 2%;
+    padding-top: 25%;
+    color:#0D0E11;
+    text-shadow: 1px 1px 1px #13C4F5;
+    font-size: 25px;
+}
+footer i:hover {
+    color: red;
+}
+
+/* To make it responsive */
+@media screen and  (max-width:600px) {
+
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+div{
+    
+    font-size: 30px;
+   
+}
+footer{
+   
+    height: 1%;
+    font-size: 15px;
+}
+}
