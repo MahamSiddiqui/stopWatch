@@ -1,19 +1,14 @@
 let hours = 0;
 let minutes = 0;
 let seconds = 0;
-let nenoSeconds = 0;
+//let nenoSeconds = 0;(update soon)
 let timer;
 let isRunning = false;
-
+// This is a function to run stopwatch.
 function updateTime() {
-    if (nenoSeconds === 59) {
-        nenoSeconds = 0;
-        seconds++
-    
-    if (seconds === 59) {
+    if (seconds === 60) {
         seconds = 0;
-
-        if (minutes === 59) {
+        if (minutes === 60) {
             minutes = 0;
             hours++
         } else {
@@ -22,30 +17,28 @@ function updateTime() {
     } else {
         seconds++;
     }
-}else {
-    nenoSeconds++;
+
+    document.querySelector('#timeerCount p').innerHTML = `${hours}:${minutes}:${seconds}`;
 }
-
-
-
-    document.querySelector('#time p').innerHTML = `0${hours}:0${minutes}:0${seconds}:0${nenoSeconds}`;
-
-}
+//start btn
 function start() {
     if (isRunning === false) {
-        timer = setInterval(updateTime, 10)
+        timer = setInterval(updateTime, 100)
         isRunning = true;
     }
 }
+//stop btn
 function stop() {
     clearInterval(timer);
     isRunning = false;
 }
+//reset btn
 function reset() {
     hours = 0;
     minutes = 0;
     seconds = 0;
-    document.querySelector('#time p').innerHTML = `0${hours}:0${minutes}:0${seconds}`;
+    nenoSeconds = 0;
+    document.querySelector('#timeerCount p').innerHTML = `${hours}:${minutes}:${seconds}`;
 
     stop();
 
