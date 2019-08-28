@@ -23,7 +23,7 @@ function updateTime() {
 //start btn
 function start() {
     if (isRunning === false) {
-        timer = setInterval(updateTime, 100)
+        timer = setInterval(updateTime, 1000)
         isRunning = true;
     }
 }
