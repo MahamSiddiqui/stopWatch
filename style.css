@@ -1,1 +1,52 @@
-/* write code here */
+body{
+    background-image: url(background.png);
+    background-repeat:no-repeat; 
+    font-family: 'Kaushan Script', cursive;
+    background-size:cover;
+    text-align: center;
+ 
+}
+h1{
+    font-size:80px;
+    margin-top: 50px;
+    text-decoration: none;
+    color:#082736;
+    text-shadow: 4px 4px 6px #13C4F5;
+}
+div{
+    color:#0D0E11 ;
+    text-shadow: 2px 2px 4px #13C4F5 ;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 20px 0 0 ;
+}
+button{
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    padding: 0px 45px 0px 45px;
+    font-size: 30px;;
+    border-radius: 8px;
+    background: none;
+    background: rgba(79,133,148, 0.5);
+    border: none;
+    margin-top: 30px; 
+    color: #0D0E11;
+    text-shadow: 2px 2px 4px #13C4F5;
+    transition: all 0.3s;
+    
+}
+button:hover,
+button:focus,
+button:active{
+    
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 60 !important;
+    letter-spacing: 3px;
+    background-color: none;
+    transition: all 0.3s;
+
+}
+button:focus{
+    outline: none;
+}

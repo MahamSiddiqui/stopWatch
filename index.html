@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
+    <h1>Stopwatch</h1>
     <div id="timeerCount">
-    <p>0 : 0: 0</p>
+    <p>0: 0: 0</p>
 </div>
 <div id="controlByBtn">
-    <button onclick="start()">Start</button>
-    <button onclick="stop()">Stop</button>
-    <button onclick="reset()">Reset</button>
+    <button class="start-btn" onclick="start()">Start</button>
+    <button class="stop-btn" onclick="stop()">Stop</button>
+    <button class="reset-btn" onclick="reset()">Reset</button>
 
 </div>
 <script src="script.js"></script>

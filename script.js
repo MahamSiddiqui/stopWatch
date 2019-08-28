@@ -18,7 +18,7 @@ function updateTime() {
         seconds++;
     }
 
-    document.querySelector('#timeerCount p').innerHTML = `${hours}:${minutes}:${seconds}`;
+    document.querySelector('#timeerCount p ').innerHTML = `${hours}:${minutes}:${seconds}`;
 }
 //start btn
 function start() {
